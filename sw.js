@@ -1,7 +1,7 @@
 const scope = self.registration.scope;
 const prefix = "ednovera-secretary-shell:" + scope + ":";
-const cacheName = prefix + "b68dcd091391b169";
-const files = ["index.html","assets/index-mcZ7gG4q.js","assets/index-DImKcXur.css","manifest.webmanifest","icon-192.png","icon-512.png"].map(file => new URL(file, scope).href);
+const cacheName = prefix + "6a7c779c388e71ad";
+const files = ["index.html","assets/index-B8SZVSQL.js","assets/index-Dx3gsCmg.css","manifest.webmanifest","icon-192.png","icon-512.png"].map(file => new URL(file, scope).href);
 const index = new URL("index.html", scope).href;
 
 self.addEventListener("install", event => {
@@ -17,6 +17,10 @@ self.addEventListener("activate", event => {
     }
     await self.clients.claim();
   })());
+});
+
+self.addEventListener("message", event => {
+  if (event.data?.type === "SKIP_WAITING") event.waitUntil(self.skipWaiting());
 });
 
 self.addEventListener("fetch", event => {

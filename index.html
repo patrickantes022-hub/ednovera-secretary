@@ -8,12 +8,19 @@
   <link rel="manifest" href="/manifest.webmanifest">
   <link rel="icon" href="/icon-192.png">
   <title>Ednovera Attendance</title>
-  <script type="module" crossorigin src="/assets/index-mcZ7gG4q.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DImKcXur.css">
+  <script type="module" crossorigin src="/assets/index-B8SZVSQL.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Dx3gsCmg.css">
 </head>
 <body>
-  <header class="masthead"><span class="brand-mark" aria-hidden="true">✓</span><span>Ednovera <strong>Attendance</strong></span></header>
+  <header class="masthead">
+    <span class="brand-mark" aria-hidden="true">✓</span><span>Ednovera <strong>Attendance</strong></span>
+    <div class="phone-update" id="phone-update" hidden>
+      <p role="status"><strong>New version ready.</strong><span id="phone-update-hint"></span></p>
+      <button id="phone-update-button" type="button" class="primary" aria-describedby="phone-update-hint">Update now</button>
+    </div>
+  </header>
   <main id="app" aria-busy="true"><p role="status">Opening attendance…</p></main>
+  <footer class="phone-version">Version 1.2.1</footer>
   <noscript>This app needs JavaScript to save attendance.</noscript>
 </body>
 </html>
