@@ -1,7 +1,7 @@
 const scope = self.registration.scope;
 const prefix = "ednovera-secretary-shell:" + scope + ":";
-const cacheName = prefix + "6a7c779c388e71ad";
-const files = ["index.html","assets/index-B8SZVSQL.js","assets/index-Dx3gsCmg.css","manifest.webmanifest","icon-192.png","icon-512.png"].map(file => new URL(file, scope).href);
+const cacheName = prefix + "4135931ea7a20891";
+const files = ["index.html","assets/index-Bl0MPm8S.js","assets/index-Dx3gsCmg.css","manifest.webmanifest","icon-192.png","icon-512.png"].map(file => new URL(file, scope).href);
 const index = new URL("index.html", scope).href;
 
 self.addEventListener("install", event => {
